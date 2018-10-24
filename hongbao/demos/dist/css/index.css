@@ -1,0 +1,377 @@
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: absolute;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.fade {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 99;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    background-image: url("../images/bg1.jpg");
+}
+
+.fade > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    background-image: url("../images/bg1.jpg");
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.rotate-big, .rotate-small {
+    position: absolute;
+    animation: defRotate 7s linear infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    z-index: 2;
+}
+
+.swiper-slide > .first > .rotate-big {
+    width: 150px;
+    height: 150px;
+    top: -15px;
+    left: -15px;
+    background-image: url("../images/rotate1.png");
+}
+
+.swiper-slide > .first > .rotate-small {
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    background-image: url("../images/rotate2.png");
+}
+
+.swiper-slide > .second > .rotate-big {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    margin-top: -75px;
+    right: 15px;
+    background-image: url("../images/rotate3.png");
+}
+
+.swiper-slide > .second > .rotate-small {
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 45px;
+    margin-top: -40px;
+    background-image: url("../images/rotate2.png");
+}
+
+.swiper-slide > .first > .title {
+    position: relative;
+    z-index: 3;
+    margin-top: 70px;
+}
+
+.swiper-slide > .first > .title > img {
+    width: 220px;
+}
+
+#subtitle {
+    position: relative;
+    z-index: 3;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#subtitle > .item {
+    display: inline-block;
+    vertical-align: middle;
+    animation-duration: 2s;
+}
+
+#subtitle > .item.left, #subtitle > .item.right {
+    width: 120px;
+}
+
+#subtitle > .item.middle {
+    width: 30px;
+    animation-duration: 1.2s;
+    animation-delay: 0.5s;
+}
+
+#date {
+    text-align: center;
+    margin-top: 15px;
+    animation-duration: 2.5s;
+    animation-delay: 0.7s;
+}
+
+#date > img {
+    width: 270px;
+}
+
+#practice {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    margin-top: 15px;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+#practice > img {
+    width: 270px;
+}
+
+.swiper-slide > .first > .reward {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper-slide > .first > .reward > .item {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.swiper-slide > .first > .reward > .item > img {
+    width: 150px;
+}
+
+#iphone, #food {
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+#travel, #shop {
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+}
+
+#firstBottom {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    animation-duration: 1s;
+    animation-delay: 3s;
+}
+
+#firstBottom > img {
+    width: 250px;
+}
+
+#secondTitle, #thirdTitle {
+    text-align: left;
+    margin: 20px 0 0 40px;
+    animation-duration: 2s;
+}
+
+#cloud {
+    text-align: right;
+    animation-delay: 0.8s;
+    animation-duration: 1.5s;
+}
+
+#cloud > img {
+    width: 100px;
+    margin: -10px 20px 0 0;
+}
+
+#secondSubtitle {
+    margin-top: -5px;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+}
+
+#secondSubtitle > img {
+    width: 300px;
+}
+
+#secondSubtitle2 {
+    animation-delay: 1.5s;
+    animation-duration: 1.3s;
+}
+
+#honBao {
+    animation-delay: 2s;
+    animation-duration: 1s;
+}
+
+#secondSubtitle2 > img {
+    width: 300px;
+}
+
+#honBao, #secondDate {
+    position: relative;
+    z-index: 3;
+}
+
+#secondDate {
+    animation-delay: 2.5s;
+    animation-duration: 1s;
+}
+
+.honBao {
+    position: relative;
+    margin-top: 30px;
+}
+
+#honBao {
+    width: 320px;
+}
+
+#secondDate > img {
+    width: 300px;
+    margin-top: -30px;
+}
+
+#photo {
+    position: absolute;
+    left: 20px;
+    top: 130px;
+    animation-delay: 0.8s;
+    animation-duration: 1.5s;
+}
+
+.thirdTitle {
+    position: relative;
+}
+
+.third > .rotate-big {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    right: -65px;
+    background-image: url("../images/rotate2.png");
+}
+
+.third > .rotate-small {
+    width: 100px;
+    height: 100px;
+    top: 30%;
+    left: -45px;
+    background-image: url("../images/rotate2.png");
+}
+
+#money {
+    width: 250px;
+    margin-top: 50px;
+    animation-delay: 1s;
+    animation-duration: 1s;
+}
+
+#sweet {
+    position: absolute;
+    right: 20px;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+}
+
+.thirdMain {
+    position: relative;
+    margin-top: 40px;
+}
+
+#duck {
+    width: 180px;
+    position: relative;
+    z-index: 3;
+    animation-delay: 1.5s;
+    animation-duration: 0.8s;
+}
+
+#bag {
+    position: absolute;
+    left: 20px;
+    width: 80px;
+    animation-delay: 2.3s;
+    animation-duration: 0.5s;
+}
+
+#ready {
+    position: absolute;
+    width: 280px;
+    left: 50%;
+    margin-left: -140px;
+    top: 50px;
+    z-index: 2;
+    animation-delay: 0.5s;
+}
+
+.begin {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    z-index: 4;
+}
+
+#begin {
+    width: 80px;
+    animation-delay: 1.5s;
+    animation-duration: 0.8s;
+}
+
+@keyframes defRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
